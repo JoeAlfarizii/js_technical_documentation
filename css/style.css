@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Layouting */
+nav{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+}
+
+#main-doc{
+    margin-left: 300px;
+    padding: 30px;
+}
+
+/* Nav Design */
+nav header{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #1B1B32;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+#logo-img{
+    width: 3em;
+}
+
+#header-caption{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+nav ul{
+    list-style: none;
+    height: 88%;
+    overflow-y: scroll;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #1B1B32;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul::-webkit-scrollbar {
+    width: 10px;
+    
+}
+
+nav ul::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+nav ul::-webkit-scrollbar-thumb {
+    background: #F7DF1E; 
+    border-radius: 20px;
+}
+
+nav ul::-webkit-scrollbar-thumb:hover {
+    background: rgb(163, 163, 14);
+}
+
+.lists-course li{
+    margin-left: 15px;
+    margin-top: 30px;
+    padding-left: 10px;
+    transition: .3s ease;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.lists-course li:hover{
+    padding-left: 20px;
+    border-left: 3px solid white;
+}
+
+/* Main content design */
+.main-section header{
+    font-size: 1.8em;
+}
+
+.main-section{
+    margin-bottom: 30px;
+}
+
+article {
+    line-height: 2.2em;
+}
+
+article p, article ul{
+    text-align: justify;
+    font-weight: 300;
+}
+
+code{
+    display: block;
+    padding: 10px;
+    margin: 15px;
+    font-family: monospace;
+    background: #f7f7f7;
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    font-size: 0.96em;
+}
+
+@media screen and (max-width:815px) {
+    nav{
+        position: relative;
+        width: 100%;
+    }
+
+    nav ul{
+        height: 40vh;
+    }
+
+    #main-doc{
+        margin-left: 0px;
+    }
+}
